@@ -1,7 +1,7 @@
 <div align="center">
 
 
-<img src="[https://images.guns.lol/a67690a57b1298218a8bc834edbb5f30b77695b8/fEjf3P.png](https://images.guns.lol/a67690a57b1298218a8bc834edbb5f30b77695b8/LQxxbb.png)" alt="ciphr" width="180" />
+<img src="https://images.guns.lol/a67690a57b1298218a8bc834edbb5f30b77695b8/LQxxbb.png" alt="ciphr" width="180" />
 
 # ciphr
 
