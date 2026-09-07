@@ -4,7 +4,7 @@
 
 ### Encryption, done right.
 
-A modern, developer-friendly encryption CLI. No bloated GUIs, no confusing flags — just clean, simple encryption from your terminal.
+A modern, developer-friendly encryption CLI with an interactive terminal UI. No bloated GUIs, no confusing flags — just clean, simple encryption from your terminal.
 
 </div>
 
@@ -14,7 +14,7 @@ A modern, developer-friendly encryption CLI. No bloated GUIs, no confusing flags
 
 ciphr is a command-line encryption tool built for developers who want the power of public-key encryption without the nightmare of GPG or tools like Kleopatra.
 
-It handles key generation, file encryption, decryption, and signing — all through a clean, intuitive CLI interface that doesn't require reading a manual to use.
+It handles key generation, file encryption, decryption, and signing — all through a clean interactive terminal UI that doesn't require reading a manual to use.
 
 We think encryption tools should be:
 
@@ -25,6 +25,7 @@ We think encryption tools should be:
 
 ## Features
 
+- **Interactive terminal UI** — navigate ciphr through a clean, keyboard-driven interface
 - **Key generation** — generate public/private keypairs in seconds
 - **Encrypt & decrypt** — encrypt files or text for a recipient using their public key
 - **Sign & verify** — sign files to prove authenticity, verify signatures from others
@@ -39,23 +40,20 @@ npm install -g ciphr
 
 ## Usage
 
+Launch the interactive UI:
+
 ```bash
-# Generate a new keypair
+ciphr
+```
+
+Or use commands directly:
+
+```bash
 ciphr keygen
-
-# Encrypt a file for a recipient
 ciphr encrypt secret.txt --recipient keys/recipient.pub
-
-# Decrypt a file
 ciphr decrypt secret.txt.ciphr --key keys/my.priv
-
-# Sign a file
 ciphr sign document.txt --key keys/my.priv
-
-# Verify a signature
 ciphr verify document.txt --sig document.txt.sig --key keys/sender.pub
-
-# List keys in your keyring
 ciphr keys list
 ```
 
